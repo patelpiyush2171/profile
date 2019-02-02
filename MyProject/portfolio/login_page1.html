@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<style type="text/css">
+	body{
+		background: #393f4b
+	}
+	@media(min-width: 900px){
+		.main_div{
+			margin-top: 200px;
+			width: 60%;
+			position: relative;
+			left: 20%;
+			height: 300px;
+			transform: translateX(-20%);
+			background: #393f4b;
+		}
+		.inner_main_div1{
+			float: left;
+			width: 45%;
+			position: relative;
+			background: #393f4b;
+			height: 300px;
+			padding-top: 12px;
+			padding-right: 20px
+		}
+		.inner_main_div1 img{
+			border: 4px solid #48a8d0;
+			border-radius: 100%;
+			width: 100px;
+			height: 100px;
+			float: right;
+		}
+		.inner_main_div2{
+			float: left;
+			width: 55%;
+			position: relative;
+			background:#393f4b;
+			height: 300px;
+		}
+		.fulltxt{
+			width: 94%;
+			height: 40px;
+			float: left;
+			margin: 0 2%;
+			margin-top: 15px;
+			padding:0 15px;
+
+		}
+		.div1{
+			position: relative;
+			width: 44%;
+			margin:0 3%;
+			float: left;
+		}
+		.div2{
+			width: 10%;
+			margin-left:4%;
+			float: left;
+			margin-top: 25px;
+		}
+		.div3{
+			width: 80%;
+			float: left;
+			margin-top: 25px;
+		}
+		.div4{
+			width: 90%;
+			margin-left: auto;
+			margin-right: auto;
+
+		}
+		select{
+			margin-top: 15px;
+			float: left;
+			width: 30%;
+			height: 40px
+		}
+		 .select1{
+			margin-left:2%;
+			margin-right: 2%;
+		}
+		 .select2{
+			margin-right: 2%;
+		}
+		.div3 p{
+			word-break: break-all;
+			font-size:11px;
+			margin-top: 4px;
+			color: #babdc2;
+			padding-left: 5px;
+		}
+		.div4 .btn-default{
+			border-radius: 0;
+			border: 0;
+			font-size: 12px;
+			margin-top: 20px;
+			background: #48a8d0; 
+			padding-left: 40px;
+			padding-right: 40px;
+			height: 35px;
+			color: white;
+		}
+		input[type="checkbox"]{
+			height: 30px;
+			width: 30px;
+			border-radius: 0;
+			border: 0;
+		}
+	}
+
+	@media(max-width: 900px){
+		.main_div{
+			margin-top: 100px;
+			width: auto;
+			position: relative;
+			height: 300px;
+			background: #393f4b
+		}
+		.inner_main_div1{
+			width: 100%;
+			position: relative;
+			background: #393f4b;
+			height: 120px;
+			padding-top: 12px;
+			padding-right: 20px;
+		}
+		.inner_main_div1 img{
+			border: 3px solid #48a8d0;
+			border-radius: 100%;
+			width: 100px;
+			height: 100px;
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+		.inner_main_div2{
+			float: left;
+			width: auto;
+			position: relative;
+			background: #393f4b;
+			height: 300px;
+		}
+		.fulltxt{
+			width: 94%;
+			height: 40px;
+			float: left;
+			margin: 0 2%;
+			margin-top: 15px;
+			padding-left: 15px;
+		}
+		.div1{
+			width: 44%;
+			margin:0 3%;
+			float: left;
+			position: relative;
+		}
+		.div2{
+			width: 5%;
+			margin-left:4%;
+			margin-right:1%;
+			float: left;
+			margin-top: 25px;
+		}
+		.div3{
+			width: 85%;
+			float: left;
+			margin-top: 25px;
+		}
+		.div4{
+			width: 100%;
+			float: left;
+		}
+		select{
+			margin-top: 15px;
+			float: left;
+			width: 30%;
+			height: 40px
+		}
+		 .select1{
+			margin-left:2%;
+			margin-right: 2%;
+		}
+		 .select2{
+			margin-right: 2%;
+		}
+		.div3 p{
+			word-break: break-all;
+			font-size:11px;
+			margin-top: 10px;
+			color: #babdc2;
+			padding-left: 1px;
+		}
+		.div4 .btn-default{
+			border-radius: 0;
+			border: 0;
+			font-size: 12px;
+			margin-top: 20px;
+			background: #48a8d0; 
+			padding-left: 40px;
+			padding-right: 40px;
+			height: 35px;
+			color: white;
+		}
+		input[type="checkbox"]{
+			height: 30px;
+			width: 30px;
+			border-radius: 0;
+			border: 0;
+		}
+	}
+	@media(max-width: 400px){
+		.main_div{
+			margin-top: 50px;
+		}
+		.fulltxt{
+			width: 94%;
+			height: 40px;
+			float: left;
+			margin: 0 3%;
+			margin-top: 10px;
+			padding-left: 15px;
+		}
+		.div1{
+			width: 94%;
+			margin:0 3%;
+			float: left;
+		}
+		.div2{
+			width: 3%;
+			margin-left:6%;
+			margin-right:1%;
+			float: left;
+			margin-top: 25px;
+		}
+		input[type="checkbox"]{
+			height: 20px;
+			width: 20px;
+			border-radius: 0;
+			border: 0;
+		}
+		.select1{
+			margin-left:3%;
+			margin-right: 2%;
+		}
+		 .select2{
+			margin-right: 2%;
+		}
+		.div3{
+			width: 80%;
+			margin-left: 4%;
+			float: left;
+			margin-top: 20px;
+		}
+	}
+	input{
+		background: #babdc2;
+		border: 0;
+	}
+	input:focus{
+		background: white;
+	}
+	input[type="text"]::placeholder{
+		font-size: 11px;
+	}
+	input[type="email"]::placeholder{
+		font-size: 11px;
+	}
+	input[type="password"]::placeholder{
+		font-size: 11px;
+	}
+	select{
+		padding-left: 10px;
+		font-size: 10px;
+		background: #babdc2;
+		border: 0;
+	}
+	select:focus{
+		background: white;
+	}
+</style>
+<script type="text/javascript">
+	function nameValidation(){
+		var name=document.getElementById('name').value;
+		if(name==""||isNaN(name)==false){
+			document.getElementById('tir').style.display="block";
+			document.getElementById('error_box').style.display="block";
+			document.getElementById('error_box').innerHTML="Please enter name";
+			status=false;
+		}
+		else{
+			document.getElementById('tir').style.display="none";
+			document.getElementById('error_box').style.display="none";
+			document.getElementById('error_box').innerHTML="";
+		}
+	}
+	function validation(){
+		var name=document.getElementById('name').value;
+		var surname=document.getElementById('surname').value;
+		var dob1=document.getElementById('dob1').value;
+		var dob2=document.getElementById('dob2').value;
+		var dob3=document.getElementById('dob3').value;
+		var username=document.getElementById('username').value;
+		var email=document.getElementById('email').value;
+		var psw=document.getElementById('psw').value;
+		var terms=document.getElementById('terms').checked;
+		var status=true;
+		if(name==""||isNaN(name)==false){
+			document.getElementById('tir').style.display="block";
+			document.getElementById('error_box').style.display="block";
+			document.getElementById('error_box').innerHTML="Please enter name";
+			status=false;
+		}
+		else{
+			document.getElementById('tir').style.display="none";
+			document.getElementById('error_box').style.display="none";
+			document.getElementById('error_box').innerHTML="";
+		}
+		if(surname==""||isNaN(surname)==false){
+			document.getElementById('tir1').style.display="block";
+			document.getElementById('error_box1').style.display="block";
+			document.getElementById('error_box1').innerHTML="Please enter surname";
+			status=false;
+		}
+		else{
+			document.getElementById('tir1').style.display="none";
+			document.getElementById('error_box1').style.display="none";
+			document.getElementById('error_box1').innerHTML="";
+		}
+		if(username==""){
+			document.getElementById('tir2').style.display="block";
+			document.getElementById('error_box2').style.display="block";
+			document.getElementById('error_box2').innerHTML="Please enter username";
+			status=false;
+		}
+		else{
+			document.getElementById('tir2').style.display="none";
+			document.getElementById('error_box2').style.display="none";
+			document.getElementById('error_box2').innerHTML="";
+		}
+		if(email==""){
+			document.getElementById('tir3').style.display="block";
+			document.getElementById('error_box3').style.display="block";
+			document.getElementById('error_box3').innerHTML="Please enter email";
+			status=false;
+		}
+		else{
+			document.getElementById('tir3').style.display="none";
+			document.getElementById('error_box3').style.display="none";
+			document.getElementById('error_box3').innerHTML="";
+		}
+		if(dob1==""||dob2==""||dob3==""){
+			document.getElementById('tir5').style.display="block";
+			document.getElementById('error_box5').style.display="block";
+			document.getElementById('error_box5').innerHTML="Please select date";
+			status=false;
+		}
+		else{
+			document.getElementById('tir5').style.display="none";
+			document.getElementById('error_box5').style.display="none";
+			document.getElementById('error_box5').innerHTML="";
+		}
+		if(psw==""||psw.length<8||psw.length>8){
+			document.getElementById('tir4').style.border="block";
+			document.getElementById('error_box4').style.display="block";
+			document.getElementById('error_box4').innerHTML="Please enter password 8 digit";
+			status=false;
+		}
+		else{
+			document.getElementById('tir4').style.display="none";
+			document.getElementById('error_box4').style.display="none";
+			document.getElementById('error_box4').innerHTML="";
+		}
+		if(terms==false){
+			document.getElementById('tir6').style.display="block";
+			document.getElementById('error_box6').style.display="block";
+			document.getElementById('error_box6').innerHTML="Please check this box";
+			status=false;
+		}
+		else{
+			document.getElementById('tir6').style.display="none";
+			document.getElementById('error_box6').style.display="none";
+			document.getElementById('error_box6').innerHTML="";
+		}
+		return status;
+	}
+</script>
+<body>
+<div class="main_div">
+<form action="#hello.html" onsubmit="return validation()" method="POST">
+	<div class="inner_main_div1">
+		<div class="img">
+			<img src="../img/g.jpg">
+		</div>
+	</div>
+	<style type="text/css">
+		.tir{
+			position: absolute;
+			top:56px;
+			left: 10%;
+			border-bottom: 10px solid #f2f2f2;
+			border-left: 6px solid transparent;
+			border-right: 6px solid transparent;
+			display: none;
+			z-index: 2;
+		}
+		.error_box{
+			position: absolute;
+			top:65px;
+			left: 0;
+			height: 22px;
+			background: #f2f2f2;
+			display: none;
+			box-shadow: 0 1px 2px red;
+			padding:4px 7px;
+			width:98%;
+			font-size: 11px;
+			word-spacing: 1px;
+			color: red;
+			z-index: 1;
+			font-style: italic;
+		}
+		.tir6{
+			top:33px;
+		}
+		.error_box6{
+			width: 130px;
+			top:42px;
+		}
+	</style>
+	<div class="inner_main_div2">
+		<div class="div1">
+			<input type="text" id="name" placeholder="Name" onfocusout="nameValidation()" class="fulltxt">
+			<div id="tir" class="tir"></div>
+			<div id="error_box" class="error_box"></div>
+		</div>
+		<div class="div1">
+			<input type="text" id="surname" placeholder="Surname" class="fulltxt">
+			<div id="tir1" class="tir"></div>
+			<div id="error_box1" class="error_box"></div>
+		</div>
+		<div class="div1">
+			<select class="select1" id="dob1">
+				<option value=""><a>DD</a></option>
+				<option value="28"><a>28</a></option>
+			</select>
+			<select class="select2" id="dob2">
+				<option value="">MM</option>
+				<option value="august">08</option>
+			</select>
+			<select id="dob3">
+				<option value="">YYYY</option>
+				<option value="1995">1995</option>
+			</select>
+			<div id="tir5" class="tir"></div>
+			<div id="error_box5" class="error_box"></div>
+		</div>
+		<div class="div1">
+			<input type="text" id="username" placeholder="Username" class="fulltxt">
+			<div id="tir2" class="tir"></div>
+			<div id="error_box2" class="error_box"></div>
+		</div>
+		<div class="div1">
+			<input type="email" id="email" placeholder="Email"  class="fulltxt">
+			<div id="tir3" class="tir"></div>
+			<div id="error_box3" class="error_box"></div>
+		</div>
+		<div class="div1">
+			<input type="password" id="psw" placeholder="Password" class="fulltxt">
+			<div id="tir4" class="tir"></div>
+			<div id="error_box4" class="error_box"></div>
+		</div>
+		<div class="div2" style="position: relative;">
+			<input type="checkbox" id="terms">
+			<div id="tir6" class="tir tir6"></div>
+			<div id="error_box6" class="error_box error_box6"></div>
+		</div>
+		<div class="div3">
+			<p>I acknowledge that I have read and accept the Terms of Use Agreement and consent to the Privacy Policy.</p>
+		</div>
+		<div class="div4">
+			<center><button type="submit" class="btn btn-default"  onclick="validation()">Validate</button></center>
+		</div>
+	</div>
+</form>
+</div>
+</body>
+</html>

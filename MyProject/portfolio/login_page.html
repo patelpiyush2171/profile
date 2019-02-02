@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style type="text/css">
+	body{
+		background:linear-gradient(90deg,#e85d5a,#bd6ce5);
+		background-attachment: fixed;
+		background-position: cover;
+	}
+	input[type="text"]::placeholder{
+		color: #818497;
+		letter-spacing: 1px
+	}
+	input[type="password"]::placeholder{
+		color: #818497;
+		letter-spacing: 1px
+	}
+	.login_main{
+		margin-top: 120px;
+		padding:10px;
+	}
+	.login{
+		width: auto;
+		min-height: 20px;
+		background: #262a36;
+		padding-left: 15px;
+		padding-right: 15px;
+		box-shadow:0 2px 8px darkgrey;
+	}
+	#login_btn:hover{
+		opacity: 0.6
+	}
+	</style>
+</head>
+<body>
+<div class="container" id="login">
+	<div class="row">
+		<div class="col-sm-4"></div>
+		<div class="col-sm-4 login_main">
+			<div class="login">
+				<div class="row">
+					<div class="col-sm-12 text-center" style="margin-top: 80px;margin-bottom: 20px">
+						<h3 style="color: #818497;font-size: 18px;">Login to your account</h3>
+					</div>
+				</div>
+				<div class="row" style="background: #33354a;padding: 3px;border-top: 2px solid #3d4053;border-bottom: 2px solid #3d4053">
+					<div class="col-sm-1">
+						
+					</div>
+					<div class="col-sm-10">
+						<div class="input-group">
+							<div class="input-group-addon" style="background: transparent;border: 0">
+								<i class="fa fa-user" aria-hidden="true" style="font-size: 22px;color: #818497"></i>
+							</div>
+							<input type="text" id="email" class="form-control" placeholder="Username" name="" style="border-radius: 0;border: 0;background: transparent;box-shadow: none;color:white">
+						</div>
+						
+					</div>
+					<div class="col-sm-1">
+					</div>
+				</div>
+				<div class="row" style="background: #33354a;padding: 3px;border-bottom: 2px solid #3d4053">
+					<div class="col-sm-1">
+						
+					</div>
+					<div class="col-sm-10">
+						<div class="input-group">
+							<div class="input-group-addon" style="background: transparent;border: 0">
+								<i class="fa fa-lock" aria-hidden="true" style="font-size: 22px;color: #818497"></i>
+							</div>
+							<input type="password" id="pass" class="form-control" placeholder="Password" name="" style="border-radius: 0;border: 0;background: transparent;box-shadow: none;color:white ">
+						</div>
+						
+					</div>
+					<div class="col-sm-1">
+					</div>
+				</div>
+				<div class="row" style="margin-top: 30px;">
+					
+					<div class="col-sm-6 text-center">
+						<button class="btn btn-default" id="login_btn" style="border: 3px solid #d35e7b;border-radius: 50px;background: transparent;color:#d35e7b;font-weight: bold;width: 170px">Log in</button>
+					</div>
+					<div class="col-sm-6 text-center">
+						<p style="color:#818497;text-decoration:underline;margin-top: 8px;cursor: pointer;word-spacing: 2px ">Forgot Password?</p>
+					</div>
+				</div>
+				<div class="row" style="margin-top: 30px;padding-bottom: 40px">
+					<div class="col-sm-1"></div>
+					<div class="col-sm-10">
+					</div>
+					<div class="col-sm-1"></div>
+				</div>
+				
+			</div>
+		</div>
+		<div class="col-sm-4"></div>
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,1683 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Piyush Patel</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style type="text/css">
+		@font-face{
+			font-family: myFont;
+			src:url(font/Raleway-Light.ttf);
+		}
+	</style>
+	<script type="text/javascript">
+	function myHeight(){
+		var hi=document.getElementById("nav_width");
+		if (window.pageYOffset >= 50) {
+			hi.classList.add("height_increase");
+		}
+	}
+	$(document).ready(function () {
+    
+	    $(document).on('click', '.navbar-collapse.in', function (e) {
+	        if ($(e.target).is('a')) {
+	            $(this).collapse('hide');
+	        }
+	    });
+	 });
+
+	
+	/*
+	$(document).ready(function(){
+		$(window).scroll(function(){
+			
+			if(window.pageYOffset >= 2200){
+				
+				$("#leftPadding1").animate({transform:"translateX(0)"},100,function(){
+					$("#leftPadding2").animate({paddingLeft:"0"},100,function(){
+						$("#leftPadding3").animate({paddingLeft:"0"},100,function(){
+							$("#leftPadding4").animate({paddingLeft:"0"},100);
+						});
+					});
+				}); 
+			}
+		})
+	});
+	*/
+
+	$(document).ready(function(){
+ 	$(window).scroll(function(){
+ 	
+    var a=document.getElementById("aimBox1");
+    var h=document.getElementById("html1");
+    var c=document.getElementById("css1");
+    var bs=document.getElementById("bs1");
+    var j=document.getElementById("js1");
+    var jq=document.getElementById("jq1");
+    var aj=document.getElementById("aj1");
+    var aavvu=document.getElementById("hello");
+    var aimBox=document.getElementById("aimBox");
+    var forMedia=document.getElementById("my_media");
+    var pf=document.getElementById("portfolio");
+    var contactus=document.getElementById("contactus");
+    var map=document.getElementById("map");
+    var phone=document.getElementById("phone");
+    var msg=document.getElementById("msg");
+    var contactarea=document.getElementById("contactarea");
+    var contactField=document.getElementById("contactField");
+
+  	var increaseSkill = aavvu.offsetTop;
+  	var slideAim = aimBox.offsetTop;
+  	var fwii = forMedia.offsetTop;
+  	var port = pf.offsetTop;
+  	var contactus = contactus.offsetTop;
+  	var contactarea = contactarea.offsetTop;
+  	
+  	
+  	if (window.pageYOffset >= (slideAim-200)) {
+  		a.classList.add("sticky");
+  	}
+
+    if(window.pageYOffset >= (increaseSkill-200)){
+      
+      h.classList.add("html1");
+      c.classList.add("css1");
+      bs.classList.add("bs1");
+      j.classList.add("js1");
+      jq.classList.add("jq1");
+      aj.classList.add("aj1");
+      $(".displayPer").fadeIn(2000);
+     
+    }
+
+    if (window.pageYOffset >= (port-200)) {
+  		$("#leftPadding1").addClass("tx");
+		$("#leftPadding2").addClass("txtwo");
+		$("#leftPadding3").addClass("txthree");
+		$("#leftPadding4").addClass("txfour");
+
+  	}
+
+    if (window.pageYOffset >= (fwii-200)) {
+    	$(".fb").addClass("facebook");
+		$(".tw").addClass("twitter");
+		$(".is").addClass("instagram");
+		$(".lin").addClass("linkedin");
+    }
+	 
+	if (window.pageYOffset >= (contactus-200)) {
+  		map.classList.add("map");
+  		phone.classList.add("phone");
+  		msg.classList.add("msg");
+  		$("#map").fadeIn(1000);
+  		$("#phone").fadeIn(1500);
+  		$("#msg").fadeIn(2000);
+  	}
+  	
+  	if (window.pageYOffset >= (contactarea-200)) {
+  		contactField.classList.add("contactField");
+  		$(".contactField").fadeIn(2000);
+  	}
+
+  });
+});
+	</script>
+</head>
+<body onscroll="myHeight()"  data-spy="scroll" data-target=".navbar" data-offset="50">
+<style type="text/css">
+html{
+	scroll-behavior: smooth;
+}
+	body h1,h2,h3,h4,p,.bigContent{
+		font-family: myFont;
+	}
+	body{
+		user-select:none;
+	}
+	body strong{
+		font-family: none;
+	}
+	#contactField{
+		transform: translateX(900px);
+
+		
+	}
+	.contactField{
+		display: none;
+		animation-name: contactField;
+		animation-fill-mode: forwards;
+		animation-duration: 1s;
+	}
+	@keyframes contactField{
+		100%{transform: translateX(0);}
+	}
+	#map,#phone,#msg{
+		transform: translateX(-900px);
+		display: none;
+	}
+	.map{
+		animation-name: map;
+		animation-fill-mode: forwards;
+		animation-duration: .5s;
+	}
+	@keyframes map{
+		100%{transform: translateX(0);}
+	}
+	.phone{
+		animation-name: phone;
+		animation-fill-mode: forwards;
+		animation-duration: 1s;
+	}
+	@keyframes phone{
+		100%{transform: translateX(0);}
+	}
+	.msg{
+		animation-name: msg;
+		animation-fill-mode: forwards;
+		animation-duration: 1.5s;
+	}
+	@keyframes msg{
+		100%{transform: translateX(0);}
+	}
+	.buttonfx{
+		transform: scale(0);
+	}
+
+	.facebook{
+		transform: scale(0);
+		animation-name: fbook;
+		animation-fill-mode: forwards;
+		animation-duration: .5s;
+	}
+	@keyframes fbook{
+		100%{transform: scale(1)}
+	}
+	.twitter{
+		animation-name: tw;
+		animation-fill-mode: forwards;
+		animation-duration: 1s;
+	}
+	@keyframes tw{
+		100%{transform: scale(1);}
+	}
+	.instagram{
+		animation-name: is;
+		animation-fill-mode: forwards;
+		animation-duration: 1.5s;
+	}
+	@keyframes is{
+		100%{transform: scale(1);}
+	}
+	.linkedin{
+		animation-name: in;
+		animation-fill-mode: forwards;
+		animation-duration: 2s;
+	}
+	@keyframes in{
+		100%{transform: scale(1);}
+	}
+
+
+
+	#leftPadding1{
+		transform: translateX(900px);
+	}
+	#leftPadding2{
+		transform: translateX(1000px);
+	}
+	#leftPadding3{
+		transform: translateX(900px);
+	}
+	#leftPadding4{
+		transform: translateX(1000px);
+	}
+	.tx{
+		animation-name: fromtx;
+		animation-fill-mode: forwards;
+		animation-duration: 1s;
+	}
+	@keyframes fromtx{
+		100%{transform: translateX(0);}
+	}
+
+	.txtwo{
+		animation-name: fromtxtwo;
+		animation-fill-mode: forwards;
+		animation-duration: 2s;
+	}
+	@keyframes fromtxtwo{
+		100%{transform: translateX(0);}
+	}
+
+	.txthree{
+		animation-name: fromtxthree;
+		animation-fill-mode: forwards;
+		animation-duration: 1s;
+	}
+	@keyframes fromtxthree{
+		100%{transform: translateX(0);}
+	}
+
+	.txfour{
+		animation-name: fromtxfour;
+		animation-fill-mode: forwards;
+		animation-duration: 2s;
+	}
+	@keyframes fromtxfour{
+		100%{transform: translateX(0);}
+	}
+
+
+
+
+
+
+
+
+	@media(min-width: 600px){
+		.ui_text{
+		color: white;
+		font-size: 18px;
+		letter-spacing: 3px;
+		word-spacing: 3px;
+		padding-top: 3px;
+		}
+		
+		.Imagination{
+			color: white;
+			font-size: 50px;
+			font-family: myFont;
+		}
+		
+	}
+	@media(max-width: 600px){
+		.ui_text{
+			color: white;
+			font-size: 13px;
+			letter-spacing: 3px;
+			word-spacing: 3px;
+			padding-top: 6px;
+		}
+
+		.Imagination{
+			color: white;
+			font-size: 25px;
+			
+		}
+	}
+	.displayPer{
+		display: none;
+	}
+	
+	#first_bg_transparent #first_page_box{
+		
+		transform:translateX(-450px) rotate(-65deg);
+		transform-origin: 0;
+		animation-name: bounce;
+		animation-fill-mode: forwards;
+		animation-duration: 1s;
+		animation-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+		
+	}
+	@keyframes bounce{
+		100% {transform:translateX(0) rotate(0)}
+	}
+	#nav_width{
+		height: 0;
+		position: fixed;
+		width: 100%;
+		z-index: 2;
+	}
+	.height_increase{
+
+	    background: #282828;
+		animation-name: nav_height;
+		animation-fill-mode: forwards;
+		animation-duration: 1s;
+		animation-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+		
+	}
+	@keyframes nav_height{
+		100% {height: 80px}
+	}
+	.sticky1{
+		margin-left: -650px;
+		opacity: 0.1;
+	}
+	.sticky{
+		animation-name: html;
+		animation-fill-mode: forwards;
+		animation-duration: 1s;
+		animation-timing-function: ease-in-out;
+	}
+	@keyframes html{
+		100% {margin-left: 0px;opacity: 1};
+	}
+
+	.html1{
+		animation-name: skill;
+		animation-fill-mode: forwards;
+		animation-duration: 1s;
+		animation-timing-function: ease-in-out;
+	}
+	@keyframes skill{
+		100% {width: 95%};
+	}
+
+	.css1{
+		animation-name: css;
+		animation-fill-mode: forwards;
+		animation-duration: 1s;
+		animation-timing-function: ease-in-out;
+	}
+	@keyframes css{
+		100% {width: 90%};
+	}
+
+	.js1{
+		animation-name: js;
+		animation-fill-mode: forwards;
+		animation-duration: 1s;
+		animation-timing-function: ease-in-out;
+	}
+	@keyframes js{
+		100% {width: 85%};
+	}
+
+	.bs1{
+		animation-name: bs;
+		animation-fill-mode: forwards;
+		animation-duration: 1s;
+		animation-timing-function: ease-in-out;
+	}
+	@keyframes bs{
+		100% {width: 85%};
+	}
+
+	.jq1{
+		animation-name: jq;
+		animation-fill-mode: forwards;
+		animation-duration: 1s;
+		animation-timing-function: ease-in-out;
+	}
+	@keyframes jq{
+		100% {width: 70%};
+	}
+
+	.aj1{
+		animation-name: aj;
+		animation-fill-mode: forwards;
+		animation-duration: 1s;
+		animation-timing-function: ease-in-out;
+	}
+	@keyframes aj{
+		100% {width: 50%};
+	}
+	#wlc_text{
+		margin: 100px 20px;
+	}
+	@media(max-width: 900px){
+		#wlc_text{
+		word-spacing: 1px;
+		letter-spacing: 1px;
+		font-size: 22px;
+		line-height: 40px;
+		color: #464646;
+		}
+	}
+	@media(max-width: 320px){
+		#wlc_text{
+			word-spacing: 1px;
+			letter-spacing: 1px;
+			line-height: 30px;
+			color: #464646;
+			font-size: 15px;
+		}
+	}
+	@media(min-width: 900px){
+		#wlc_text{
+			word-spacing: 1px;
+			letter-spacing: 1px;
+			font-size: 25px;
+			line-height: 50px;
+			color: #464646
+		}
+		.navbar{
+			border:0;
+			border-radius: 0;
+			background: transparent;
+			margin-bottom: 0;
+			z-index: 2
+		}
+		.navbar-nav{
+			padding:15px 0;
+			padding-right: 150px;
+		}
+		.navbar-brand{
+			margin-top: 6px;
+			padding-left: 200px;
+		}
+	}
+	.navbar-inverse .navbar-nav > li > a {
+	    	color: white;
+	    	font-size: 11px;
+	    	letter-spacing: 2px
+	}
+	@media(min-width: 400px){
+		.overStoryImg{
+			height: 800px;
+			width: 100%;
+		}
+	}
+	@media(max-width: 400px){
+		.overStoryImg{
+			height: 300px;
+			width: 100%;
+		}
+	}
+	body{
+		height: 3000px
+	}
+	#first_bg{
+		background: url(img/compu1.jpg);
+		background-size: cover;
+		background-position: cover;
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+	}
+	#first_bg_transparent{
+		position: relative;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		padding-bottom: 100px;
+		height: 100%;
+		width: auto;
+		background: rgba(0,0,0,0.6);
+	}
+	
+	@media(min-width: 600px){
+		#first_page_box{
+		margin-top: 190px;
+		width: auto;
+		border: 1px solid white;
+		padding: 70px 40px;
+		
+		}
+	}
+	@media(max-width: 600px){
+		#first_page_box{
+		margin-top: 150px;
+		width: auto;
+		border: 1px solid white;
+		padding: 20px 10px;
+		
+		}
+	}
+	.overStory{
+		margin: 0;
+		padding: 0;	
+	}
+	#ourStory_left{
+		height: 700px;
+		width: auto;
+		background: red;
+	}
+	#aimPart{
+		
+		width: 100%;
+		background: #282828;
+		padding-top: 100px ;
+		padding-bottom: 100px;
+	}
+	@media(min-width: 1100px){
+		#aimText{
+			font-size: 50px;
+			letter-spacing: 1px;
+			word-spacing: 1px;
+			line-height: 70px;
+			color: white;
+		}
+		#aimPart{
+			padding-left: 130px;
+			padding-right: 70px;
+		}
+	}
+	
+	@media(max-width: 1100px){
+		#aimPart{
+			padding-left: 50px;
+			padding-right: 50px;
+		}
+		#aimText{
+			font-size: 25px;
+			letter-spacing: 1px;
+			word-spacing: 1px;
+			line-height: 40px;
+			color: white;
+		}
+	}
+	@media(max-width: 320px){
+		#aimPart{
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+		#aimText{
+			font-size: 20px;
+			letter-spacing: 1px;
+			word-spacing: 1px;
+			line-height: 30px;
+			color: white;
+		}
+	}
+	.navbar-inverse .navbar-nav > .active > a ,.navbar-inverse .navbar-nav > .active > a:focus,  .navbar-inverse .navbar-nav > .active > a:hover{
+	    color: #1DBBA0;
+	    font-size: 11px;
+	    letter-spacing: 2px;
+	    background-color: transparent;
+	}
+	.navbar-inverse .navbar-nav > li > a:hover{
+		 color: #1DBBA0;
+	}
+</style>
+<div id="nav_width">
+	<nav class="navbar navbar-inverse">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>                        
+	      </button>
+	      <a class="navbar-brand" style="height: 80px"><div class="text-center" style="height: 40px;width: 40px;background: #1DBBA0;border-radius: 100%;font-weight: bold;float: left;color: #282828;padding-top: 10px;transform: rotate(-45deg);font-size: 25px">P</div><p style="float: left;margin-top: 10px;margin-left: 10px;color: white;letter-spacing: 5px;font-size: 20px">Piyush</p></a>
+	    </div>
+	    <div class="collapse navbar-collapse" id="myNavbar">
+	      <ul class="nav navbar-nav navbar-right">
+	        <li class="active"><a href="#first_bg">HOME</a></li>
+	        <li><a href="#about">ABOUT</a></li>
+	        <li><a href="#portfolio">PORTFOLIO</a></li>
+	        <li><a href="#contactus">CONTACT</a></li>
+	      </ul>
+	    </div>
+	  </div>
+	</nav>
+</div>
+<style type="text/css">
+	@media(min-width: 600px){
+		#first_bg{
+			height: 700px;
+		}
+	}
+	@media(max-width: 600px){
+		#first_bg{
+			height: 400px;
+		}
+	}
+</style>
+<div id="first_bg" style="">
+	<div id="first_bg_transparent" >
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6">
+					<div id="first_page_box" class="text-center">
+						<center><div style="width: 150px;height: 150px;border-radius: 100%;overflow: hidden;opacity: 0.6"><img src="img/g.jpg" style="height: 100%;width: 100%;"></div></center>
+						<br>
+						<center><div class="text-center" id="ui_designer" style="width: 80%;background:#1DBBA0;height: 30px;"><p class="ui_text">UI/UX DESIGNER</p></div></center>
+						
+						
+					</div>
+				</div>
+				<div class="col-sm-6">
+					
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container">
+	<div class="row">
+		<div class="col-sm-12 text-center" >
+			<h2 id="wlc_text" style="font-family: myFont;">To be a part of an esteemed organization, where in all my skills and abilities will be effectively pulled out for the benefit of the organization as well as myself.</h2>
+		</div>
+	</div>
+</div>
+<style type="text/css">
+	@media(min-width: 1000px){
+		.storyBox{
+			width: 100%;
+			min-height: 800px;
+			background:#282828;
+			padding-top: 150px;
+			padding-bottom: 100px;
+			padding-left: 100px;
+			padding-right: 50px;
+		}
+		.storyBox h2{
+			font-size: 40px;
+		    font-family: myFont;
+			color: white;
+		}
+		.storyBox hr{
+			width:210px;
+			float: left;
+		}
+		.Away{
+			color: #F0F0F0;
+			font-size: 20px;
+			font-family: myFont;
+			letter-spacing: 1px;
+			word-spacing: 1px;
+			line-height: 35px;
+		}
+		.bigContent{
+			color: white;
+			font-size: 13px;
+			letter-spacing: 1px;
+			word-spacing: 1px;
+			line-height: 25px;
+		}
+	}
+	@media(max-width: 1000px){
+		.storyBox{
+			width: 100%;
+			min-height: 800px;
+			background:#282828;
+			padding-top: 150px;
+			padding-bottom: 100px;
+			padding-left: 50px;
+			padding-right: 50px;
+		}
+		.storyBox h2{
+			font-size: 30px;
+			color: white;
+		}
+		.storyBox hr{
+			width:155px;
+			float: left;
+		}
+		.Away{
+			color: #F0F0F0;
+			font-size: 20px;
+			letter-spacing: 1px;
+			word-spacing: 1px;
+			line-height: 35px;
+		}
+		.bigContent{
+			color: white;
+			font-size: 13px;
+			letter-spacing: 1px;
+			word-spacing: 1px;
+			line-height: 25px;
+		}
+	}
+	@media(max-width: 500px){
+		.storyBox{
+			width: 100%;
+			min-height: 800px;
+			background:#282828;
+			padding-top: 100px;
+			padding-bottom: 100px;
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+		.storyBox h2{
+			font-size: 20px;
+			color: white;
+		}
+		.storyBox hr{
+			width:105px;
+			float: left;
+		}
+		.Away{
+			color: #F0F0F0;
+			font-size: 15px;
+			letter-spacing: 1px;
+			word-spacing: 1px;
+			line-height: 25px;
+		}
+		.bigContent{
+			color: white;
+			font-size: 12px;
+			letter-spacing: 1px;
+			word-spacing: 1px;
+			line-height: 20px;
+		}
+	}
+</style>
+<div style="overflow: hidden" id="about">
+	<div class="row overStory">
+		<div class="col-sm-6 overStory">
+			<div class="storyBox">
+				<h2>ABOUT ME</h2>
+				<hr>
+				<div style="clear:both"></div>
+				<br><br>
+				<h4 class="Away">TRAINING & CERTIFACTION</h4>
+				<ul>
+					<li class="bigContent">Completed Web Designing  Training at Info Campus Training Institute, Marathahalli, Bangalore.</li>
+				</ul>
+				<br>
+				<h4 class="Away">PROFESSIONAL  SUMMARY</h4>
+				<ul>
+					<li class="bigContent">Silverwing Technologies  Jan 2018 – April 2018 as a Intern.</li>
+				</ul>
+				<br>
+				<h4 class="Away">EDUCATION</h4>
+				<ul>
+					<li class="bigContent">Scored 66.62% in SSC from GSEB Board - Maruti Vidyalay, Patdi.</li>
+					<li class="bigContent">Scored 69.14% in HSC from GHSEB Board - Ultra Vision Academy , Surendranagar.</li>
+					<li class="bigContent">Scored 73.00% in BCA from Saurastra University  - Swami Vivekanand College, Surendranagar.</li>
+					<li class="bigContent">Scored  53.00%  in  MCA from GLS University , Ahmedabad.</li>
+				</ul>
+				
+			</div>
+		</div>
+		<div class="col-sm-6 overStory">
+			<img src="img/stairs.jpg" class="overStoryImg">
+		</div>
+	</div>
+</div>
+
+
+<style type="text/css">
+	
+	
+</style>
+<div style="overflow: hidden" >
+	<div class="row overStory">
+	<div id="aimBox">
+		<div class="col-sm-6 overStory" >
+			<div id="aimPart">
+				<div id="aimBox1" class="sticky1" style="width: 100%;border: 0;padding: 25px;background: #1DBBA0">
+					<div class="text-center" style="height: 100%;width: 100%;border: 1px solid white;padding: 35px">
+						<p id="aimText">MY AIM IS TO PROVIDE THE<strong style="color: #282828"> BETTER QUALITY</strong> OF WORK</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+		<div id="hello">
+		<div class="col-sm-6 overStory">
+		<style type="text/css">
+			
+			#html,#css,#bs,#js,#jq,#aj{
+				position: relative;
+				width:100%;
+				height: 5px;
+				background: lightgrey;
+				border-radius: 5px
+			}
+			#html1,#css1,#bs1,#js1,#jq1,#aj1{
+				position: absolute;
+				top:0;
+				left: 0;
+				bottom: 0;
+				right: 0;
+				height: 100%;
+				width: 0;
+				background: linear-gradient(90deg,#282828,#1DBBA0);
+				border-radius: 5px
+			}
+			.displayPer{
+				background: #1DBBA0;
+				height: 20px;
+				width: 40px;
+				position: absolute;
+				top: -27px;
+				font-size: 12px;
+				text-align: center;
+				padding-top: 2px;
+				color:white;
+
+			}
+			.displayPer1{
+				left: 95%;
+				transform: translateX(-50%);
+			}
+			.displayPer2{
+				left: 90%;
+				transform: translateX(-50%);
+			}
+			.displayPer3{
+				left: 85%;
+				transform: translateX(-50%);
+			}
+			.displayPer4{
+				left: 85%;
+				transform: translateX(-50%);
+			}
+
+			.displayPer5{
+				left: 70%;
+				transform: translateX(-50%);
+			}
+			.displayPer6{
+				left: 50%;
+				transform: translateX(-50%);
+
+			}
+			.dtir{
+				position: absolute;
+				top: 20px;
+				left: 16px;
+				border-top: 6px solid #1DBBA0;
+				border-right: 3px solid transparent;
+				border-left: 3px solid transparent;
+			}
+			@media(min-width: 900px){
+				.skillPage{
+					padding-top:170px;
+					padding-left:100px;
+					padding-right: 150px;
+					padding-bottom:170px;
+				}
+				.lanName{
+					font-size: 13px;
+					font-family: none;
+					letter-spacing: 2px;
+				}
+			}
+			@media(min-width: 650px) and (max-width: 900px){
+				.skillPage{
+					padding-top:100px;
+					padding-left:50px;
+					padding-right: 50px;
+					padding-bottom:100px;
+				}
+				.lanName{
+					font-size: 13px;
+					font-family: none;
+					letter-spacing: 2px;
+				}
+				
+			}
+			@media(max-width: 650px){
+				.skillPage{
+					padding-top:100px;
+					padding-left:50px;
+					padding-right: 50px;
+					padding-bottom:70px;
+				}
+				.lanName{
+					font-size: 11px;
+					font-family: none;
+					letter-spacing: 1px;
+				}
+			}
+			@media(max-width: 320px){
+				.skillPage{
+					padding-top:100px;
+					padding-left:20px;
+					padding-right: 20px;
+					padding-bottom:50px;
+				}
+			}
+		</style>
+			<div class="skillPage" style="">
+
+				<p class="lanName">HTML5</p>
+				<div id="html">
+					<div  id="html1"></div>
+					<div class="displayPer displayPer1" >95%
+							<div class="dtir"></div>
+					</div>
+
+				</div>
+				<br>
+
+
+				<p class="lanName">CSS3</p>
+				<div id="css">
+					<div  id="css1"></div>
+					<div class="displayPer displayPer2" >90%
+							<div class="dtir"></div>
+					</div>
+
+				</div>
+				<br>
+
+
+				<p class="lanName">BOOTSTRAP</p>
+				<div id="bs">
+					<div  id="bs1"></div>
+					<div class="displayPer displayPer3" >85%
+							<div class="dtir"></div>
+					</div>
+
+				</div>
+				<br>
+
+				<p class="lanName">JAVASCRIPT</p>
+				<div id="js">
+					<div  id="js1"></div>
+					<div class="displayPer displayPer4" >85%
+							<div class="dtir"></div>
+					</div>
+
+				</div>
+				<br>
+
+				<p class="lanName">JQUERY</p>
+				<div id="jq">
+					<div  id="jq1"></div>
+					<div class="displayPer displayPer5" >70%
+							<div class="dtir"></div>
+					</div>
+
+				</div>
+				<br>
+
+				<p class="lanName">ANGULAR 1</p>
+				<div id="aj">
+					<div  id="aj1"></div>
+					<div class="displayPer displayPer6" >50%
+							<div class="dtir"></div>
+					</div>
+
+				</div>
+				<br>
+
+			</div>
+		</div>
+		</div>
+	</div>
+</div>
+
+<style type="text/css">
+	@media(max-width: 1000px){
+		.portfolio{
+			padding: 100px 50px; 
+		}
+		.portfolio h2{
+			font-size: 30px;
+			color: #464646;
+		}
+		.portfolio hr{
+			width:165px;
+			float: left;
+			background: #464646;
+			height: 1px;
+			border: 0;
+		}
+		#portfolioBG{
+			padding-top: 100px;
+			padding-bottom: 110px; 
+		}
+	}
+	@media(min-width: 1000px){
+		.for_zoom img{
+			width: 100%;
+			height:200px;
+		}
+		.portfolio{
+			padding: 100px 100px; 
+		}
+		.portfolioImg{
+			padding: 100px 70px; 
+		}
+		#portfolioBG{
+			padding-top: 100px;
+			padding-bottom: 110px; 
+			padding-right: 50px
+		}
+		.portfolio h2{
+			font-size: 40px;
+			color: #464646;
+		}
+		.portfolio hr{
+			width:220px;
+			float: left;
+			background: #464646;
+			height: 1px;
+			border: 0;
+		}
+		.leftPadding img{
+			height: 200px;
+			width: 100%
+		}
+	}
+	.leftPadding img{
+		position: relative;
+	}
+	@media(max-width: 900px){
+		.for_zoom img{
+			width: 100%;
+			height:200px;
+		}
+		#portfolioBG{
+			padding-top: 0;
+			padding-bottom: 100px; 
+		}
+		.portfolio h2{
+			font-size: 30px;
+			color: #464646;
+		}
+		.portfolio hr{
+			width:170px;
+			float: left;
+			background: #464646;
+			height: 1px;
+			border: 0;
+		}
+		
+	}
+	@media(max-width: 1000px){
+		.leftPadding img{
+			height: 300px;
+			width: 90%
+		}
+		.leftPadding{
+			width: 100%;
+		}
+		.for_zoom img{
+			height: 200px;
+			width: 100%
+		}
+	}
+	@media(max-width: 400px){
+		.for_zoom img{
+			height: 180px;
+			width: 100%
+		}
+		.portfolio h2{
+			font-size: 20px;
+			letter-spacing: 1px;
+			color: #464646;
+		}
+		.portfolio hr{
+			width:120px;
+			float: left;
+			background: #464646;
+			height: 1px;
+			border: 0;
+		}
+		.portfolio{
+			padding-top: 100px;
+			padding-bottom:60px;
+			padding-left:30px; 
+			padding-right:30px; 
+		}
+		#portfolioBG{
+			padding-top: 0;
+			padding-bottom: 100px; 
+		}
+		.leftPadding{
+			width: 100%;
+		}
+	}
+	.zoom{
+		position: absolute;
+		  bottom: 0;
+		  left: 0;
+		  top: 0;
+		  right: 0;
+		  background-color: rgba(240,240,240,0.5);
+		  width: 100%;
+		  height: 100%;
+		  transform: scale(0);
+		  transition:all .5s ease;
+	}
+	.zoomOut{
+		position: absolute;
+		  bottom: 0;
+		  left: 0;
+		  top: 0;
+		  right: 0;
+		  background-color: rgb(29,187,160,0.9);
+		  width: 100%;
+		  height: 100%;
+		  transform: scale(1);
+		  transition:all .6s ease;
+	}
+	.for_zoom{
+		padding: 0;
+	}
+	.img_margin{
+		margin: 10px;
+	}
+	.for_zoom:hover .zoom {
+	  transform: scale(1);
+	}
+	.for_zoom:hover .zoomOut {
+	  transform: scale(0);
+	}
+	.zeroMP{
+		margin: 0;
+		width: 0;
+		height: 0;
+		padding: 0;
+	}
+</style>
+
+<div style="overflow: hidden" id="portfolio">
+	<div  class="row overStory">
+		<div class="col-sm-4 overStory portfolio">
+			<h2>PORTFOLIO</h2>
+			<hr>
+		</div>
+		<div id="portfolioBG" class="col-sm-8 overStory ">
+				<div class="row">
+					<div class="col-sm-1"></div>
+					<div class="col-sm-5 " id="leftPadding1">
+						<div class="row img_margin">
+							<div class="col-sm-12 for_zoom">
+								<center><img class="" src="img/por2.jpg"></center>
+								<center></center>
+								<div class="zoomOut"><div class="port_number text-center"><h1>1</h1></div></div>
+								<div class="zoom"><div id="overBtn" class="text-center"><a href="portfolio/login_page.html" target="_blank"><button id="viewPortfolio" class="btn btn-default">VIEW DEMO</button></a></div></div>
+							</div>
+						</div>
+					</div>
+					<style type="text/css">
+						.port_number{
+							border: 8px solid #282828;
+							border-radius: 100%;
+							height: 100px;
+							width: 100px;
+							position: absolute;
+							top: 50%;
+							left: 50%;
+							transform: translateX(-50%) translateY(-50%);
+						}
+						.port_number h1{
+							color: #282828;
+							font-weight: bold;
+						}
+						#overBtn{
+							border: 8px solid rgb(29,187,160);
+							height: 100%;
+							width: auto;
+						}
+						#viewPortfolio{
+							border: 0;
+							position: absolute;
+							top: 50%;
+							left: 50%;
+							transform: translateX(-50%) translateY(-50%);
+							background: rgb(29,187,160);
+							border-radius: 0;
+							color: white;
+							font-size: 11px;
+							padding: 10px 20px;
+							letter-spacing: 1px;
+							word-spacing: 1px;
+						}
+						
+					</style>
+					<div class="col-sm-1 zeroMP"></div>
+					<div class="col-sm-5 " id="leftPadding2">
+						<div class="row img_margin">
+							<div class="col-sm-12 for_zoom">
+								<center><img  src="img/por3.jpg"></center>
+								<center></center>
+								<div class="zoomOut"><div class="port_number text-center"><h1>3</h1></div></div>
+								<div class="zoom"><div id="overBtn" class="text-center"><a href="portfolio/login_page1.html" target="_blank"><button id="viewPortfolio" class="btn btn-default">VIEW DEMO</button></a></div></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-1"></div>
+					<div class="col-sm-5 " id="leftPadding3">
+						<div class="row img_margin">
+							<div class="col-sm-12 for_zoom">
+								<center><img  src="img/por.jpg"></center>
+								<center></center>
+								<div class="zoomOut"><div class="port_number text-center"><h1>2</h1></div></div>
+								<div class="zoom"><div id="overBtn" class="text-center"><a href="portfolio/design.html" target="_blank"><button id="viewPortfolio" class="btn btn-default">VIEW DEMO</button></a></div></div>
+							</div>
+						</div>
+					</div>
+			
+					<div class="col-sm-1 zeroMP"></div>
+					<div class="col-sm-5 " id="leftPadding4">
+						<div class="row img_margin">
+							<div class="col-sm-12 for_zoom">
+								<center><img  src="img/por1.jpg"></center>
+								<center></center>
+								<div class="zoomOut"><div class="port_number text-center"><h1>4</h1></div></div>
+								<div class="zoom"><div id="overBtn" class="text-center"><a href="portfolio/index.html" target="_blank"><button id="viewPortfolio" class="btn btn-default">VIEW DEMO</button></a></div></div>
+							</div>
+						</div>
+					</div>
+				</div>
+		</div>
+	</div>
+</div>
+
+
+<style type="text/css">
+	#my_media{
+		padding-bottom: 170px;
+		background: #282828;
+	}
+	@media(min-width: 1100px){
+		.pm{
+			padding-top: 20px;
+			padding-bottom: 20px;
+		}
+		.fa{
+			font-size: 120px;
+			color: white
+		}
+	}
+	@media(max-width: 1100px){
+		.pm{
+			padding-top: 15px;
+			padding-bottom: 15px;
+		}
+		.fa{
+			font-size: 120px;
+			color: white
+		}
+	}
+	@media(max-width: 1000px){
+		.pm{
+			padding-top: 10px;
+			padding-bottom: 10px;
+		}
+		.fa{
+			font-size: 100px;
+			color: white
+		}
+	}
+	@media(max-width: 850px){
+		.pm{
+			padding-top: 5px;
+			padding-bottom: 5px;
+		}
+	}
+	@media(max-width: 770px){
+		.pm{
+			padding-top: 20px;
+			padding-bottom: 20px;
+		}
+	}
+	@media(max-width: 650px){
+		.pm{
+			padding-top: 10px;
+			padding-bottom: 10px;
+		}
+		.fa{
+			font-size: 100px;
+			color: white
+		}
+	}
+	@media(min-width: 550px){
+		.fb,.tw,.is,.lin{
+			width: 20%;
+			float: left;
+		}
+		.flex{
+			display: flex;
+			justify-content: space-between;
+		}
+	}
+	@media(max-width: 550px){
+		.pm{
+			padding: 20px;
+
+		}
+		.fa{
+			font-size: 100px;
+			color: white
+		}
+		.pm{
+			width: 150px;
+			display: block;
+			position: relative;
+			left: 30%;
+			margin-top: 10px;
+		}
+
+		
+	}
+	@media(max-width: 350px){
+		.pm{
+			width: 150px;
+			display: block;
+			position: relative;
+			left: 23%;
+			margin-top: 10px;
+		}
+	}
+	@media(max-width: 280px){
+		.pm{
+			width: 150px;
+			display: block;
+			position: relative;
+			left: 17%;
+			margin-top: 10px;
+		}
+	}
+	@media(min-width: 600px){
+		.wrs{
+			font-size: 50px;
+			letter-spacing: 1px;
+			word-spacing: 1px;
+			color: white;
+		}
+		.wrsBox{
+			border-bottom: 1px solid #4f5259;
+			border-right: 1px solid #4f5259;
+			border-left: 1px solid #4f5259;
+			border-bottom-left-radius: 10px;
+			border-bottom-right-radius: 10px;
+			padding: 30px;
+		}
+		
+	}
+	@media(max-width: 600px){
+		.wrs{
+			font-size: 20px;
+			letter-spacing: 1px;
+			word-spacing: 1px;
+			color: white;
+		}
+		.wrsBox{
+			border-bottom: 1px solid #4f5259;
+			border-right: 1px solid #4f5259;
+			border-left: 1px solid #4f5259;
+			border-bottom-left-radius: 10px;
+			border-bottom-right-radius: 10px;
+			padding: 20px;
+		}
+	}
+	.fb,.tw,.is,.lin{
+		border: 1px solid #4f5259;
+	}
+	
+</style>
+<div id="my_media" style="overflow: hidden;">
+	<div class="row">
+		<div class="col-sm-2"></div>
+		<div class="col-sm-8 text-center" style="margin: 0 10px">
+			<div class="wrsBox">
+				<h1 class="wrs">WE ARE SOCIAL</h1>
+			</div>
+			
+		</div>
+		<div class="col-sm-2"></div>
+	</div>
+<style type="text/css">
+	.fb{
+		background: transparent;
+		transition: background .5s;
+	}
+	.fb:hover{
+		background: rgba(59,89,152,0.3);
+		border-color: rgba(59,89,152,0.1);
+	}
+	.tw{
+		background: transparent;
+		transition: background .5s;
+	}
+	.tw:hover{
+		background: rgba(29,202,255,0.3);
+		border-color: rgba(29,202,255,0.1);
+	}
+	.is{
+		background: transparent;
+		transition: background .5s;
+	}
+	.is:hover{
+		background: rgba(215,70,129,0.3);
+		border-color: rgba(215,70,129,0.1);	
+	}
+	.lin{
+		background: transparent;
+		transition: background .5s;
+	}
+	.lin:hover{
+		background: rgba(0,119,181,0.3);	
+		border-color: rgba(0,119,181,0.1);
+	}
+	
+</style>
+	<div class="row">
+		<div class="col-sm-2"></div>
+		<div class="col-sm-8" style="margin-top: 60px;margin-left:10px;margin-right: 10px;">
+			<div class="flex">
+			<div class="fb pm buttonfx text-center"><a href="https://www.facebook.com/patelpiyush8238686381" target="_blank"><i class="fa fa-facebook-square"></i></a></div>
+			<div class="tw pm buttonfx text-center"><i class="fa fa-twitter-square"></i></div>
+			<div class="is pm buttonfx text-center"><a href="https://www.instagram.com/patel_piyush121/" target="_blank"><i class="fa fa-instagram"></i></a></div>
+			<div class="lin pm buttonfx text-center"><a href="https://www.linkedin.com/in/piyush-patel-268967166/" target="_blank"><i class="fa fa-linkedin-square"></i></a></div>
+			</div>
+		</div>
+		<div class="col-sm-2"></div>
+	</div>
+</div>
+<style type="text/css">
+	@media(min-width: 1000px){
+		.contactSend{
+			padding:90px 150px 120px 50px;
+		}
+		.contactSendMedia{
+			padding:90px 50px 120px 150px;
+			min-height: 500px;
+		}
+		.contactSend h1{
+			color: lightgrey;
+			font-size: 40px;
+			letter-spacing: 1px;
+		}
+		.contactSend hr{
+			width:260px;
+			float: left;
+		}
+	}
+	@media(max-width: 1000px){
+		.contactSend{
+			padding:90px 50px 90px 50px;
+		}
+		.contactSendMedia{
+			padding:90px 50px 90px 50px;
+			min-height: 500px;
+		}
+		.contactSend h1{
+			color: #F0F0F0;
+			font-size: 30px;
+		}
+		.contactSend hr{
+			width:188px;
+			float: left;
+		}
+	}
+	@media(max-width: 400px){
+		.contactSend h1{
+			color: #F0F0F0;
+			font-size: 20px;
+			letter-spacing: 1px;
+		}
+		.contactSend hr{
+			width:136px;
+			float: left;
+
+
+
+		}
+	}
+	.contactSend input[type="text"]{
+		background: transparent;
+		width: 100%;
+		height: 40px;
+		border: 1px solid #F0F0F0;
+		padding: 5px 10px;
+		color: white;
+	}
+	.contactSend input[type="text"]::placeholder{
+		color: lightgrey;
+		font-size: 12px;
+		letter-spacing: 2px;
+		word-spacing: 2px;
+	}
+	.contactSend textarea{
+		background: transparent;
+		width: 100%;
+		height: 200px;
+		border: 1px solid #F0F0F0;
+		resize: none;
+		padding: 10px 10px;
+		color: white;
+	}
+	.contactSend textarea::placeholder{
+		color: lightgrey;
+		font-size: 12px;
+		letter-spacing: 2px;
+		word-spacing: 2px;
+	}
+	.contactSend p{
+		color: white;
+		letter-spacing: 1px;
+		margin-top: 20px;
+	}
+	.contactSend button{
+		color: #F0F0F0;
+		letter-spacing: 2px;
+		margin-top: 20px;
+		float: right;
+		border: 1px solid #F0F0F0;
+		background: transparent;
+		border-radius: 0;
+		padding: 10px 30px;
+
+	}
+	.contactSend button:hover{
+		animation-name: buttonblue;
+		animation-duration: .5s;
+		animation-fill-mode: forwards;
+	}
+	@keyframes buttonblue{
+		100%{background: #3770cc;border-color: #3770cc}
+	}
+	.contactSendMedia .fa{
+		color: #3770cc;
+		font-size: 55px;
+		margin-top: 50px
+	}
+	.contactSendMedia h1{
+		font-size: 13px;
+		padding-bottom: 10px;
+		letter-spacing: 1px;
+		font-weight: bold;
+	}
+	.contactSendMedia p{
+		letter-spacing: 1px;
+		word-spacing: 1px;
+		font-size: 13px;
+		font-family: none;
+		margin: 0;
+		padding: 0;
+	}
+</style>
+
+	<div id="contactus" style="overflow: hidden;">
+		<div class="row">
+			<div class="col-sm-6">
+				<div class="contactSendMedia">
+					<div id="map">
+						<div class="row text-center">
+							<i class="fa fa-map-marker" ></i>
+							<h1>ADDRESS</h1>
+							<p>To- Bamanva, Ta- Patdi</p>
+							<p>Dis- Surendranagar (363765)</p>
+							<p>Gujrat</p>
+						</div>
+					</div>
+					<div id="phone">
+						<div class="row text-center">
+							<i class="fa fa-phone"></i>
+							<h1>CONTACT NO</h1>
+							<p>+91 9726540612</p>
+						</div>
+					</div>
+					<div id="msg">
+						<div class="row text-center">
+							<i class="fa fa-envelope-o"></i>
+							<h1>EMAIL</h1>
+							<p>patelpus@yahoo.com</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-6" id="contactarea" style="background: #133870">
+
+				<div class="contactSend">
+				
+					<div class="row">
+						<h1>CONTACT US</h1>
+						<hr>
+					</div>
+					<div id="contactField">
+						<div class="row topM">
+							<p>NAME</p>
+							<input type="text" placeholder="Enter Name">
+						</div>
+						<div class="row">
+							<p>EMAIL</p>
+							<input type="text" placeholder="Enter Email">
+						</div>
+						<div class="row">
+							<p>MESSAGE</p>
+							<textarea placeholder="Enter Your Message"></textarea>
+						</div>
+						<div class="row">
+							<button type="submit" >SUBMIT</button>
+						</div>
+					</div>
+				
+				</div>
+			</div>
+		</div>
+	</div>
+	<style type="text/css">
+		#for_top{
+			background: #0b284f;
+			padding: 25px;
+		}
+		#for_top .fa{
+			padding:7px 15px;
+			font-size: 40px;
+			color: lightgrey;
+			border: 1px solid lightgrey;
+		}
+		#reserved{
+			background: #08203f;
+			padding: 30px;
+		}
+		#reserved p{
+			padding: 0;
+			margin: 0;
+			font-size: 11px;
+			color: #F0F0F0;
+			letter-spacing: 1px;
+			word-spacing: 1px;
+		}
+		.fa-angle-double-up:hover{
+			animation-name: upar;
+			animation-duration: .5s;
+			animation-fill-mode: forwards;
+		}
+		@keyframes upar{
+			100%{transform: translateY(-10px);}
+		}
+	</style>
+<div id="for_top" class="text-center">
+	<a href="#" ><i class="fa fa-angle-double-up"></i></a>
+</div>
+<div id="reserved" class="text-center">
+	<p>All content &copy; Piyush, 2018. All rights reserved.</p>
+</div>
+
+</body>
+</html>
